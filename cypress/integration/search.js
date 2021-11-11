@@ -15,7 +15,7 @@ describe('Search elements', ()=>{
             cy.get(index.searchButton).click();     //obtengo el elto botón y lo pulso
         })
         //busco y me traigo de fixture el fichero con los eltos de los resultados de la búsqueda y lo recupero (igual que antes)
-        cy.fixture('searchResults').then((searchResult)=>{
+        cy.fixture('searchResult').then((searchResult)=>{
             cy.get(searchResult.title).should('contain','dress');  //texto debe contener la palabra 'dress'
         })
     })
@@ -26,7 +26,7 @@ describe('Search elements', ()=>{
             cy.get(index.searchBox).type('qwerty');
             cy.get(index.searchButton).click();
         })
-        cy.fixture('searchResults').then((searchResult)=>{
+        cy.fixture('searchResult').then((searchResult)=>{
             cy.get(searchResult.alert).should('contain','No results were found for your search'); 
         })
     })

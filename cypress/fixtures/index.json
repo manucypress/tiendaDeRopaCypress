@@ -1,4 +1,4 @@
 {
-    "searchBox":"#search_query_top",    //la caja de búsqueda
-    "searchButton":"#searchbox > .btn"  //el botón de la lupa
+    "searchBox":"#search_query_top",    
+    "searchButton":"#searchbox > .btn"  
 }
